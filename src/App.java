@@ -18,7 +18,11 @@ public class App {
         bst.insert(root, 63) ;
         bst.insert(root, 67) ;
 
-        bst.inorderTrav(root);
+        bst.inorderTrav(root); 
+   
+         System.out.println();
+        boolean present = bst.search( 63,root) ;
+        System.out.println(" element is present ? " + present);
 
     }
 }

@@ -32,4 +32,14 @@ public class BST<T extends Comparable <T>> {
          inorderTrav(root.right);
     }
 
+    public boolean search(T key, Node<T> root){
+
+         if(root == null) return false ; 
+
+          if(root.data.compareTo(key) > 0) return search(key, root.left);
+          else if(root.data.compareTo(key) < 0 ) return search(key, root.right);
+          return  true ; 
+         
+    }
+
 }
