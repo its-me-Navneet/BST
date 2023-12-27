@@ -28,7 +28,7 @@ public class BST<T extends Comparable <T>> {
          if(root == null) return  ;
 
          inorderTrav(root.left);
-         System.out.println(root.data);
+         System.out.print(root.data+ " ");
          inorderTrav(root.right);
     }
 
